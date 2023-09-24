@@ -2,5 +2,8 @@
   "About site": "",
   "Language": "Український",
   "Main page": "",
-  "Page not found": "Сторінка не знайдена"
+  "Page not found": "Сторінка не знайдена",
+  "Reload page": "Reload page",
+  "Something went wrong": "Помилка при завантаженні",
+  "throw error": "помилка"
 }
