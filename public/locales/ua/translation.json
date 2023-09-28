@@ -1,9 +1,12 @@
 {
-  "About site": "",
+  "About site": "Про нас",
   "Language": "Український",
+  "Main": "Головна",
   "Main page": "",
   "Page not found": "Сторінка не знайдена",
   "Reload page": "Перезавантажити сторінку",
   "Something went wrong": "Помилка при завантаженні",
-  "throw error": "помилка"
+  "throw error": "помилка",
+  "toggle": "Перемкнути",
+  "Short lang": "UA"
 }
