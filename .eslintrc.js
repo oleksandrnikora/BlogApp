@@ -19,6 +19,7 @@ module.exports = {
     plugins: [
         'react',
         '@typescript-eslint',
+        'react-hooks',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -42,8 +43,20 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'max-len': ['error', { ignoreComments: true, code: 100 }],
         'linebreak-style': 0,
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'error',
     },
     globals: {
         __IS_DEV__: true,
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
+            rules: {
+                'max-len': 'off',
+            },
+        },
+    ],
 };
