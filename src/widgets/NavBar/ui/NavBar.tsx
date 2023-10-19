@@ -5,6 +5,7 @@ import { Button, ThemeButton } from 'shared/ui/Button/Button';
 import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Modal } from 'shared/ui/Modal/Modal';
+import { LoginModal } from 'feauters/AuthByUsername';
 import cls from './NavBar.module.scss';
 
 interface NavbarProps {
@@ -13,10 +14,14 @@ interface NavbarProps {
 
 export const NavBar = ({ className }: NavbarProps) => {
     const { t } = useTranslation();
-    const [isAuth, setIsAuth] = useState(false);
+    const [isAuthModal, setIsAuthModal] = useState(false);
 
-    const onToggleModal = useCallback(() => {
-        setIsAuth((prev) => !prev);
+    const onCloseModal = useCallback(() => {
+        setIsAuthModal(false);
+    }, []);
+
+    const onShowModal = useCallback(() => {
+        setIsAuthModal(true);
     }, []);
 
     return (
@@ -24,13 +29,14 @@ export const NavBar = ({ className }: NavbarProps) => {
             <Button
                 className={cls.links}
                 theme={ThemeButton.CLEAR_INVERTED}
-                onClick={onToggleModal}
+                onClick={onShowModal}
             >
                 {t('Login')}
             </Button>
-            <Modal isOpen={isAuth} onClose={onToggleModal}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text ever since the 1500s
-            </Modal>
+            <LoginModal
+                isOpen={isAuthModal}
+                onClose={onCloseModal}
+            />
         </div>
     );
 };
