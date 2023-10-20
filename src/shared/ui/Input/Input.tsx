@@ -1,6 +1,8 @@
 /* eslint-disable no-undef */
 import { classNames } from 'shared/lib/classNames/classNames';
-import { InputHTMLAttributes, memo } from 'react';
+import {
+    InputHTMLAttributes, memo, useEffect, useRef,
+} from 'react';
 import cls from './Input.module.scss';
 
 type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange'>;
@@ -8,7 +10,8 @@ type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onC
 interface InputProps extends HTMLInputProps {
     className?: string;
     value?: string;
-    onChange: (value: string) => void;
+    onChange?: (value: string) => void;
+    autofocus?: boolean;
 }
 
 export const Input = memo((props: InputProps) => {
@@ -18,12 +21,20 @@ export const Input = memo((props: InputProps) => {
         onChange,
         type = 'text',
         placeholder,
+        autofocus,
         ...otherProps
     } = props;
 
+    const ref = useRef<HTMLInputElement>(null);
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange?.(e.target.value);
     };
+
+    useEffect(() => {
+        if (autofocus) {
+            ref.current?.focus();
+        }
+    }, [autofocus]);
 
     return (
         <div className={classNames(cls.InputWrapper, {}, [className])}>
@@ -34,14 +45,15 @@ export const Input = memo((props: InputProps) => {
             )}
             <div className={cls.caretWrapper}>
                 <input
+                    ref={ref}
                     type={type}
                     value={value}
                     onChange={onChangeHandler}
                     className={cls.input}
                 />
-                <span
+                {/* <span
                     className={cls.caret}
-                />
+                /> */}
             </div>
         </div>
     );
