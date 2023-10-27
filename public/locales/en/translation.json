@@ -1,7 +1,9 @@
 {
   "About site": "About site",
+  "Authorization form": "Authorization form",
   "Enter password": "Enter password",
   "Enter username": "Enter username",
+  "Exit": "Exit",
   "Language": "English",
   "Login": "Login",
   "Main": "Main",
@@ -9,6 +11,7 @@
   "Reload page": "Reload page",
   "Short lang": "EN",
   "Something went wrong": "Something went wrong",
+  "You entered an incorrect login or password": "You entered an incorrect login or password",
   "throw error": "throw error",
   "toggle": "toggle"
 }

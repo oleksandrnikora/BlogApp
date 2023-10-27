@@ -1,7 +1,9 @@
 {
   "About site": "Про нас",
+  "Authorization form": "Авторизуйтесь, будь-ласка",
   "Enter password": "Введіть пароль",
   "Enter username": "Введіть username",
+  "Exit": "Вийти",
   "Language": "Український",
   "Login": "Увійти",
   "Main": "Головна",
@@ -9,6 +11,7 @@
   "Reload page": "Перезавантажити сторінку",
   "Short lang": "UA",
   "Something went wrong": "Помилка при завантаженні",
+  "You entered an incorrect login or password": "Ви ввели невірний логін або пароль",
   "throw error": "помилка",
   "toggle": "Перемкнути"
 }
