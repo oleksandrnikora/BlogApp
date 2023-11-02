@@ -25,5 +25,14 @@
         "password": "99999"
       }
     ],
-    "profile": { "name": "typicode" }
+    "profile": { 
+      "firstName": "Alex",
+      "lastName": "IT",
+      "age": 34,
+      "currency": "USD",
+      "country": "Ukraine",
+      "city": "Kyiv",
+      "username": "admin",
+      "avatar": "https://img.freepik.com/free-photo/handsome-bearded-guy-orange-sweater-showing-smartphone-screen-smiling-showing-promo-online-turquoise-wall_1258-23878.jpg?w=996&t=st=1698943774~exp=1698944374~hmac=ca37c65aaf85ed951b4d2e2d199cb657411e0946b76b81f42a2cb4e8301a8d33" 
+    }
   }

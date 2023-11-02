@@ -8,6 +8,7 @@ import {
     ReducersMapObject,
 } from '@reduxjs/toolkit';
 import { CounterShema } from 'enteties/Counter';
+import { ProfileSchema } from 'enteties/Profile';
 import { UserSchema } from 'enteties/User';
 import { LoginSchema } from 'feauters/AuthByUsername';
 
@@ -17,6 +18,7 @@ export interface StateShema {
 
     // async reducer
     loginForm?: LoginSchema;
+    profile?: ProfileSchema;
 }
 
 export interface ReducerManager {
