@@ -17,7 +17,7 @@ import cls from './LoginForm.module.scss';
 
 export interface LoginFormProps {
     className?: string;
-    onSucces?: () => void;
+    onSucces: () => void;
 }
 
 const initialReducers: ReducersList = {

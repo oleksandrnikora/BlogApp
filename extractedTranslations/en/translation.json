@@ -1,6 +1,7 @@
 {
   "About site": "",
   "Authorization form": "",
+  "Edit": "",
   "Enter password": "",
   "Enter username": "",
   "Exit": "",
@@ -8,10 +9,14 @@
   "Login": "",
   "Main": "",
   "Page not found": "",
+  "Profile": "",
   "Profile page": "",
   "Reload page": "",
   "Something went wrong": "",
   "You entered an incorrect login or password": "",
+  "Your last": "",
+  "Your lastname": "",
+  "Your name": "",
   "throw error": "",
   "toggle": ""
 }

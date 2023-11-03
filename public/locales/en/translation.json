@@ -1,6 +1,8 @@
 {
+  "About": "About",
   "About site": "About site",
   "Authorization form": "Authorization form",
+  "Edit": "Edit",
   "Enter password": "Enter password",
   "Enter username": "Enter username",
   "Exit": "Exit",
@@ -8,11 +10,14 @@
   "Login": "Login",
   "Main": "Main",
   "Page not found": "Page not found",
+  "Profile": "Profile",
   "Profile page": "Profile page",
   "Reload page": "Reload page",
   "Short lang": "EN",
   "Something went wrong": "Something went wrong",
   "You entered an incorrect login or password": "You entered an incorrect login or password",
+  "Your lastname": "Your lastname",
+  "Your name": "Your name",
   "throw error": "throw error",
   "toggle": "toggle"
 }

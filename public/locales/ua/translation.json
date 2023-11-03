@@ -1,6 +1,8 @@
 {
+  "About": "Про нас",
   "About site": "Про нас",
   "Authorization form": "Авторизуйтесь, будь-ласка",
+  "Edit": "Редагувати",
   "Enter password": "Введіть пароль",
   "Enter username": "Введіть username",
   "Exit": "Вийти",
@@ -8,11 +10,14 @@
   "Login": "Увійти",
   "Main": "Головна",
   "Page not found": "Сторінка не знайдена",
-  "Profile page": "Профіль",
+  "Profile": "Профіль",
+  "Profile page": "Профіль сторінки",
   "Reload page": "Перезавантажити сторінку",
   "Short lang": "UA",
   "Something went wrong": "Помилка при завантаженні",
   "You entered an incorrect login or password": "Ви ввели невірний логін або пароль",
+  "Your lastname": "Ваше прізвище",
+  "Your name": "Ваше імя",
   "throw error": "помилка",
   "toggle": "Перемкнути"
 }

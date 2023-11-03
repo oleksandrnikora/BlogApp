@@ -19,11 +19,11 @@ export const SideBarItemList: SideBarItemType[] = [
     {
         path: RoutePath.about,
         Icon: AboutIcon,
-        text: 'About site',
+        text: 'About',
     },
     {
         path: RoutePath.profile,
         Icon: ProfileIcon,
-        text: 'Profile page',
+        text: 'Profile',
     },
 ];
